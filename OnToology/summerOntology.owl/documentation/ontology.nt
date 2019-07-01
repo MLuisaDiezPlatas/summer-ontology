@@ -1,0 +1,136 @@
+<https://summer-school.uned.es/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://summer-school.uned.es/ontology> <http://purl.org/dc/elements/1.1/title> "Mª Luisa Díez Platas"@es .
+<https://summer-school.uned.es/ontology> <http://purl.org/dc/elements/1.1/title> "Ontología poesía, escuela de verano 2019"@es .
+<https://summer-school.uned.es/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "summerOnto"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://summer-school.uned.es/ontology#esRealizadaMediante
+<http://summer-school.uned.es/ontology#esRealizadaMediante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://summer-school.uned.es/ontology#esRealizadaMediante> <http://www.w3.org/2002/07/owl#inverseOf> <http://summer-school.uned.es/ontology#realiza> .
+<http://summer-school.uned.es/ontology#esRealizadaMediante> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Obra> .
+<http://summer-school.uned.es/ontology#esRealizadaMediante> <http://www.w3.org/2000/01/rdf-schema#range> <http://summer-school.uned.es/ontology#Redaccion> .
+# 
+# http://summer-school.uned.es/ontology#realiza
+<http://summer-school.uned.es/ontology#realiza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://summer-school.uned.es/ontology#realiza> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Redaccion> .
+<http://summer-school.uned.es/ontology#realiza> <http://www.w3.org/2000/01/rdf-schema#range> <http://summer-school.uned.es/ontology#Obra> .
+# 
+# http://summer-school.uned.es/ontology#tieneAutor
+<http://summer-school.uned.es/ontology#tieneAutor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://summer-school.uned.es/ontology#tieneAutor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Obra> .
+<http://summer-school.uned.es/ontology#tieneAutor> <http://www.w3.org/2000/01/rdf-schema#range> <http://summer-school.uned.es/ontology#Persona> .
+# 
+# http://summer-school.uned.es/ontology#tieneCreador
+<http://summer-school.uned.es/ontology#tieneCreador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://summer-school.uned.es/ontology#tieneCreador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Redaccion> .
+<http://summer-school.uned.es/ontology#tieneCreador> <http://www.w3.org/2000/01/rdf-schema#range> <http://summer-school.uned.es/ontology#Persona> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://summer-school.uned.es/ontology#fecha
+<http://summer-school.uned.es/ontology#fecha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://summer-school.uned.es/ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Obra> .
+<http://summer-school.uned.es/ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://summer-school.uned.es/ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha de creación de la obra"@es .
+<http://summer-school.uned.es/ontology#fecha> <http://www.w3.org/2000/01/rdf-schema#label> "fechaCreacion"@es .
+# 
+# http://summer-school.uned.es/ontology#fechaPersona
+<http://summer-school.uned.es/ontology#fechaPersona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://summer-school.uned.es/ontology#idioma
+<http://summer-school.uned.es/ontology#idioma> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://summer-school.uned.es/ontology#idioma> <http://www.w3.org/2000/01/rdf-schema#comment> "Idioma en el que está escrita la obra o redacción"@es .
+<http://summer-school.uned.es/ontology#idioma> <http://www.w3.org/2000/01/rdf-schema#label> "idioma"@es .
+# 
+# http://summer-school.uned.es/ontology#nombre
+<http://summer-school.uned.es/ontology#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://summer-school.uned.es/ontology#nombre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Persona> .
+<http://summer-school.uned.es/ontology#nombre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://summer-school.uned.es/ontology#nombre> <http://www.w3.org/2000/01/rdf-schema#comment> "nombre y apellidos de la persona"@es .
+# 
+# http://summer-school.uned.es/ontology#tema
+<http://summer-school.uned.es/ontology#tema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://summer-school.uned.es/ontology#tema> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Obra> .
+<http://summer-school.uned.es/ontology#tema> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://summer-school.uned.es/ontology#tema> <http://www.w3.org/2000/01/rdf-schema#comment> "Tema tratado en la obra"@es .
+<http://summer-school.uned.es/ontology#tema> <http://www.w3.org/2000/01/rdf-schema#label> "tema"@es .
+# 
+# http://summer-school.uned.es/ontology#tipoRedaccion
+<http://summer-school.uned.es/ontology#tipoRedaccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://summer-school.uned.es/ontology#tipoRedaccion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://summer-school.uned.es/ontology#Redaccion> .
+<http://summer-school.uned.es/ontology#tipoRedaccion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://summer-school.uned.es/ontology#tipoRedaccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de redaccioon, analitica o crítica\nPodrñia ser vocabulario controlado"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://summer-school.uned.es/ontology#Obra
+<http://summer-school.uned.es/ontology#Obra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://summer-school.uned.es/ontology#Obra> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/title> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+<http://summer-school.uned.es/ontology#Obra> <http://www.w3.org/2000/01/rdf-schema#comment> "Obra poética. Es un concepto abstracto" .
+# 
+# http://summer-school.uned.es/ontology#Persona
+<http://summer-school.uned.es/ontology#Persona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://summer-school.uned.es/ontology#Redaccion
+<http://summer-school.uned.es/ontology#Redaccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Título de la obra"@es .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "titulo"@es .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
