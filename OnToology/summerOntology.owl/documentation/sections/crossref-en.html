@@ -4,13 +4,17 @@ This section provides details for each class and property defined by Mª Luisa D
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">
-            <span>obra</span>
-         </a>
+         <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">Obra</a>
+      </li>
+      <li>
+         <a href="#http://summer-school.uned.es/ontology#Persona" title="http://summer-school.uned.es/ontology#Persona">Persona</a>
+      </li>
+      <li>
+         <a href="#http://summer-school.uned.es/ontology#Redaccion" title="http://summer-school.uned.es/ontology#Redaccion">Redaccion</a>
       </li>
    </ul>
    <div class="entity" id="http://summer-school.uned.es/ontology#Obra">
-      <h3>obra<sup class="type-c" title="class">c</sup>
+      <h3>Obra<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -25,10 +29,10 @@ This section provides details for each class and property defined by Mª Luisa D
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://summer-school.uned.es/ontology#esRealizadaMediante"
-               title="http://summer-school.uned.es/ontology#esRealizadaMediante">es realizada mediante</a>
+               title="http://summer-school.uned.es/ontology#esRealizadaMediante">esRealizadaMediante</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#http://summer-school.uned.es/ontology#fecha" title="http://summer-school.uned.es/ontology#fecha">fechaCreacion</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://summer-school.uned.es/ontology#tema" title="http://summer-school.uned.es/ontology#tema">tema</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://summer-school.uned.es/ontology#tieneAutor" title="http://summer-school.uned.es/ontology#tieneAutor">tiene autor</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://summer-school.uned.es/ontology#tieneAutor" title="http://summer-school.uned.es/ontology#tieneAutor">tieneAutor</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -38,34 +42,73 @@ This section provides details for each class and property defined by Mª Luisa D
          </dd>
       </dl>
    </div>
+   <div class="entity" id="http://summer-school.uned.es/ontology#Persona">
+      <h3>Persona<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://summer-school.uned.es/ontology#Persona</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://summer-school.uned.es/ontology#nombre" title="http://summer-school.uned.es/ontology#nombre">nombre</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://summer-school.uned.es/ontology#tieneAutor" title="http://summer-school.uned.es/ontology#tieneAutor">tieneAutor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://summer-school.uned.es/ontology#tieneCreador"
+               title="http://summer-school.uned.es/ontology#tieneCreador">tieneCreador</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://summer-school.uned.es/ontology#Redaccion">
+      <h3>Redaccion<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://summer-school.uned.es/ontology#Redaccion</p>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://summer-school.uned.es/ontology#realiza" title="http://summer-school.uned.es/ontology#realiza">realiza</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://summer-school.uned.es/ontology#tieneCreador"
+               title="http://summer-school.uned.es/ontology#tieneCreador">tieneCreador</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://summer-school.uned.es/ontology#tipoRedaccion"
+               title="http://summer-school.uned.es/ontology#tipoRedaccion">tipoRedaccion</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://summer-school.uned.es/ontology#esRealizadaMediante"
+               title="http://summer-school.uned.es/ontology#esRealizadaMediante">esRealizadaMediante</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#http://summer-school.uned.es/ontology#esRealizadaMediante"
-            title="http://summer-school.uned.es/ontology#esRealizadaMediante">
-            <span>es realizada mediante</span>
-         </a>
+            title="http://summer-school.uned.es/ontology#esRealizadaMediante">esRealizadaMediante</a>
       </li>
       <li>
-         <a href="#http://summer-school.uned.es/ontology#realiza" title="http://summer-school.uned.es/ontology#realiza">
-            <span>realiza</span>
-         </a>
+         <a href="#http://summer-school.uned.es/ontology#realiza" title="http://summer-school.uned.es/ontology#realiza">realiza</a>
       </li>
       <li>
-         <a href="#http://summer-school.uned.es/ontology#tieneAutor" title="http://summer-school.uned.es/ontology#tieneAutor">
-            <span>tiene autor</span>
-         </a>
+         <a href="#http://summer-school.uned.es/ontology#tieneAutor" title="http://summer-school.uned.es/ontology#tieneAutor">tieneAutor</a>
       </li>
       <li>
          <a href="#http://summer-school.uned.es/ontology#tieneCreador"
-            title="http://summer-school.uned.es/ontology#tieneCreador">
-            <span>tiene creador</span>
-         </a>
+            title="http://summer-school.uned.es/ontology#tieneCreador">tieneCreador</a>
       </li>
    </ul>
    <div class="entity" id="http://summer-school.uned.es/ontology#esRealizadaMediante">
-      <h3>es realizada mediante<sup class="type-op" title="object property">op</sup>
+      <h3>esRealizadaMediante<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -75,12 +118,12 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">obra</a>
+               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">Obra</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Redaccion">redaccion</span>
+               <a href="#http://summer-school.uned.es/ontology#Redaccion" title="http://summer-school.uned.es/ontology#Redaccion">Redaccion</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -102,25 +145,25 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Redaccion">redaccion</span>
+               <a href="#http://summer-school.uned.es/ontology#Redaccion" title="http://summer-school.uned.es/ontology#Redaccion">Redaccion</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">obra</a>
+               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">Obra</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#http://summer-school.uned.es/ontology#esRealizadaMediante"
-                  title="http://summer-school.uned.es/ontology#esRealizadaMediante">es realizada mediante</a>
+                  title="http://summer-school.uned.es/ontology#esRealizadaMediante">esRealizadaMediante</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="http://summer-school.uned.es/ontology#tieneAutor">
-      <h3>tiene autor<sup class="type-op" title="object property">op</sup>
+      <h3>tieneAutor<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -130,19 +173,19 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">obra</a>
+               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">Obra</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Persona">persona</span>
+               <a href="#http://summer-school.uned.es/ontology#Persona" title="http://summer-school.uned.es/ontology#Persona">Persona</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
    </div>
    <div class="entity" id="http://summer-school.uned.es/ontology#tieneCreador">
-      <h3>tiene creador<sup class="type-op" title="object property">op</sup>
+      <h3>tieneCreador<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
@@ -152,12 +195,12 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Redaccion">redaccion</span>
+               <a href="#http://summer-school.uned.es/ontology#Redaccion" title="http://summer-school.uned.es/ontology#Redaccion">Redaccion</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Persona">persona</span>
+               <a href="#http://summer-school.uned.es/ontology#Persona" title="http://summer-school.uned.es/ontology#Persona">Persona</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -170,21 +213,21 @@ This section provides details for each class and property defined by Mª Luisa D
          <a href="#http://summer-school.uned.es/ontology#fecha" title="http://summer-school.uned.es/ontology#fecha">fechaCreacion</a>
       </li>
       <li>
+         <a href="#http://summer-school.uned.es/ontology#fechaPersona"
+            title="http://summer-school.uned.es/ontology#fechaPersona">fechaPersona</a>
+      </li>
+      <li>
          <a href="#http://summer-school.uned.es/ontology#idioma" title="http://summer-school.uned.es/ontology#idioma">idioma</a>
       </li>
       <li>
-         <a href="#http://summer-school.uned.es/ontology#nombre" title="http://summer-school.uned.es/ontology#nombre">
-            <span>nombre</span>
-         </a>
+         <a href="#http://summer-school.uned.es/ontology#nombre" title="http://summer-school.uned.es/ontology#nombre">nombre</a>
       </li>
       <li>
          <a href="#http://summer-school.uned.es/ontology#tema" title="http://summer-school.uned.es/ontology#tema">tema</a>
       </li>
       <li>
          <a href="#http://summer-school.uned.es/ontology#tipoRedaccion"
-            title="http://summer-school.uned.es/ontology#tipoRedaccion">
-            <span>tipo redaccion</span>
-         </a>
+            title="http://summer-school.uned.es/ontology#tipoRedaccion">tipoRedaccion</a>
       </li>
    </ul>
    <div class="entity" id="http://summer-school.uned.es/ontology#fecha">
@@ -201,7 +244,7 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">obra</a>
+               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">Obra</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -210,6 +253,14 @@ This section provides details for each class and property defined by Mª Luisa D
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="http://summer-school.uned.es/ontology#fechaPersona">
+      <h3>fechaPersona<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://summer-school.uned.es/ontology#fechaPersona</p>
    </div>
    <div class="entity" id="http://summer-school.uned.es/ontology#idioma">
       <h3>idioma<sup class="type-dp" title="data property">dp</sup>
@@ -236,7 +287,7 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Persona">persona</span>
+               <a href="#http://summer-school.uned.es/ontology#Persona" title="http://summer-school.uned.es/ontology#Persona">Persona</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -260,7 +311,7 @@ This section provides details for each class and property defined by Mª Luisa D
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">obra</a>
+               <a href="#http://summer-school.uned.es/ontology#Obra" title="http://summer-school.uned.es/ontology#Obra">Obra</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -271,7 +322,7 @@ This section provides details for each class and property defined by Mª Luisa D
       </div>
    </div>
    <div class="entity" id="http://summer-school.uned.es/ontology#tipoRedaccion">
-      <h3>tipo redaccion<sup class="type-dp" title="data property">dp</sup>
+      <h3>tipoRedaccion<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -285,7 +336,7 @@ Podrñia ser vocabulario controlado</span>
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://summer-school.uned.es/ontology#Redaccion">redaccion</span>
+               <a href="#http://summer-school.uned.es/ontology#Redaccion" title="http://summer-school.uned.es/ontology#Redaccion">Redaccion</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
