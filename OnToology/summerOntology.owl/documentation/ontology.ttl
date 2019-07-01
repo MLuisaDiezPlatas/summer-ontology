@@ -1,0 +1,139 @@
+@prefix : <https://summer-school.uned.es/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://summer-school.uned.es/ontology> .
+
+<https://summer-school.uned.es/ontology> rdf:type owl:Ontology ;
+                                          <http://purl.org/dc/elements/1.1/title> "Mª Luisa Díez Platas"@es ,
+                                                                                  "Ontología poesía, escuela de verano 2019"@es ;
+                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "summerOnto"@es .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        rdfs:range xsd:string .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://summer-school.uned.es/ontology#esRealizadaMediante
+<http://summer-school.uned.es/ontology#esRealizadaMediante> rdf:type owl:ObjectProperty ;
+                                                            owl:inverseOf <http://summer-school.uned.es/ontology#realiza> ;
+                                                            rdfs:domain <http://summer-school.uned.es/ontology#Obra> ;
+                                                            rdfs:range <http://summer-school.uned.es/ontology#Redaccion> .
+
+
+###  http://summer-school.uned.es/ontology#realiza
+<http://summer-school.uned.es/ontology#realiza> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://summer-school.uned.es/ontology#Redaccion> ;
+                                                rdfs:range <http://summer-school.uned.es/ontology#Obra> .
+
+
+###  http://summer-school.uned.es/ontology#tieneAutor
+<http://summer-school.uned.es/ontology#tieneAutor> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain <http://summer-school.uned.es/ontology#Obra> ;
+                                                   rdfs:range <http://summer-school.uned.es/ontology#Persona> .
+
+
+###  http://summer-school.uned.es/ontology#tieneCreador
+<http://summer-school.uned.es/ontology#tieneCreador> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://summer-school.uned.es/ontology#Redaccion> ;
+                                                     rdfs:range <http://summer-school.uned.es/ontology#Persona> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:DatatypeProperty .
+
+
+###  http://summer-school.uned.es/ontology#fecha
+<http://summer-school.uned.es/ontology#fecha> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://summer-school.uned.es/ontology#Obra> ;
+                                              rdfs:range xsd:string ;
+                                              rdfs:comment "Fecha de creación de la obra"@es ;
+                                              rdfs:label "fechaCreacion"@es .
+
+
+###  http://summer-school.uned.es/ontology#fechaPersona
+<http://summer-school.uned.es/ontology#fechaPersona> rdf:type owl:DatatypeProperty .
+
+
+###  http://summer-school.uned.es/ontology#idioma
+<http://summer-school.uned.es/ontology#idioma> rdf:type owl:DatatypeProperty ;
+                                               rdfs:comment "Idioma en el que está escrita la obra o redacción"@es ;
+                                               rdfs:label "idioma"@es .
+
+
+###  http://summer-school.uned.es/ontology#nombre
+<http://summer-school.uned.es/ontology#nombre> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://summer-school.uned.es/ontology#Persona> ;
+                                               rdfs:range xsd:string ;
+                                               rdfs:comment "nombre y apellidos de la persona"@es .
+
+
+###  http://summer-school.uned.es/ontology#tema
+<http://summer-school.uned.es/ontology#tema> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://summer-school.uned.es/ontology#Obra> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:comment "Tema tratado en la obra"@es ;
+                                             rdfs:label "tema"@es .
+
+
+###  http://summer-school.uned.es/ontology#tipoRedaccion
+<http://summer-school.uned.es/ontology#tipoRedaccion> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://summer-school.uned.es/ontology#Redaccion> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment """Tipo de redaccioon, analitica o crítica
+Podrñia ser vocabulario controlado"""@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://summer-school.uned.es/ontology#Obra
+<http://summer-school.uned.es/ontology#Obra> rdf:type owl:Class ;
+                                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/dc/elements/1.1/title> ;
+                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                               owl:onDataRange xsd:string
+                                                             ] ;
+                                             rdfs:comment "Obra poética. Es un concepto abstracto" .
+
+
+###  http://summer-school.uned.es/ontology#Persona
+<http://summer-school.uned.es/ontology#Persona> rdf:type owl:Class .
+
+
+###  http://summer-school.uned.es/ontology#Redaccion
+<http://summer-school.uned.es/ontology#Redaccion> rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/dc/elements/1.1/title> rdfs:comment "Título de la obra"@es ;
+                                        rdfs:label "titulo"@es .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
