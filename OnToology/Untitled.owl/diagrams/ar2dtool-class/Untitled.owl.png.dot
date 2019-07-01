@@ -1,0 +1,17 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "summerOnto:Redaccion" "summerOnto:Persona" "summerOnto:Obra" ; /*classes style*/
+	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
+	"NULL" -> "dc:title" [ label = "owl:onProperty" ];
+	"owl:Thing" -> "xsd:string" [ label = "dc:title" ];
+	"summerOnto:Redaccion" -> "summerOnto:Obra" [ label = "summerOnto:realiza" ];
+	"summerOnto:Redaccion" -> "xsd:string" [ label = "summerOnto:tipoRedaccion" ];
+	"summerOnto:Obra" -> "summerOnto:Redaccion" [ label = "summerOnto:esRealizadaMediante" ];
+	"summerOnto:Obra" -> "xsd:string" [ label = "summerOnto:fecha" ];
+	"summerOnto:Obra" -> "summerOnto:Persona" [ label = "summerOnto:tieneAutor" ];
+	"summerOnto:Obra" -> "xsd:string" [ label = "summerOnto:tema" ];
+	"summerOnto:Redaccion" -> "summerOnto:Persona" [ label = "summerOnto:tieneCreador" ];
+	"summerOnto:Persona" -> "xsd:string" [ label = "summerOnto:nombre" ];
+
+}

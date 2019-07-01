@@ -1,0 +1,67 @@
+{
+  "@context" : {
+    "idioma" : {
+      "@id" : "http://summer-school.uned.es/ontology#idioma"
+    },
+    "tema" : {
+      "@id" : "http://summer-school.uned.es/ontology#tema",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "esRealizadaMediante" : {
+      "@id" : "http://summer-school.uned.es/ontology#esRealizadaMediante",
+      "@type" : "@id"
+    },
+    "nombre" : {
+      "@id" : "http://summer-school.uned.es/ontology#nombre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "fechaPersona" : {
+      "@id" : "http://summer-school.uned.es/ontology#fechaPersona"
+    },
+    "fecha" : {
+      "@id" : "http://summer-school.uned.es/ontology#fecha",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Persona" : {
+      "@id" : "http://summer-school.uned.es/ontology#Persona"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "realiza" : {
+      "@id" : "http://summer-school.uned.es/ontology#realiza",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "tipoRedaccion" : {
+      "@id" : "http://summer-school.uned.es/ontology#tipoRedaccion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tieneAutor" : {
+      "@id" : "http://summer-school.uned.es/ontology#tieneAutor",
+      "@type" : "@id"
+    },
+    "Redaccion" : {
+      "@id" : "http://summer-school.uned.es/ontology#Redaccion"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "tieneCreador" : {
+      "@id" : "http://summer-school.uned.es/ontology#tieneCreador",
+      "@type" : "@id"
+    },
+    "Obra" : {
+      "@id" : "http://summer-school.uned.es/ontology#Obra"
+    }
+  }
+}
